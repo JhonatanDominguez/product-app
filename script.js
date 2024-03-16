@@ -32,6 +32,7 @@ class UI {
     }
 }
 document.getElementById("product-form").addEventListener("submit",function(e){
+    e.preventDefault();
     const ui = new UI();
     ui.showMessage( "Product added Successfully","success");
 })
